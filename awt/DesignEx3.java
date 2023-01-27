@@ -28,9 +28,11 @@ public class DesignEx3 extends MFrame2{
 			add(b[i] = new Button(lab[i]));
 			p.add(b[i]);
 		}
+		list.select(0);
 		add(list);
 		add(p,BorderLayout.EAST);
 		add(tf= new TextField(30),BorderLayout.SOUTH);
+		tf.requestFocus();
 		
 		validate();
 		
